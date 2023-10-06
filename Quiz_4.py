@@ -5,12 +5,9 @@ def print_gugudan_table(n):
             result = i * j
             print(f"{i} X {j} = {result}")
 
-try:
-    num = int(input("몇 단까지 출력할까요? "))
+num = int(input("몇 단까지 출력할까요? "))
 
-    if num < 1 or num > 19:
-        print("1부터 19까지의 숫자를 입력하세요.")
-    else:
-        print_gugudan_table(num)
-except ValueError:
-    print("올바른 숫자를 입력하세요.")
+if num < 1 or num > 19:
+    print("1부터 19까지의 숫자를 입력하세요.")
+else:
+    print_gugudan_table(num)
