@@ -1,13 +1,12 @@
-def print_gugudan_table(n):
-    for i in range(1, n + 1):
-        print(f"------[ {i} 단 ] ------")
-        for j in range(1, 20):
-            result = i * j
-            print(f"{i} X {j} = {result}")
+def print_gugudan(var):
+    print("구구단을 출력합니다.\n")
+    for x in range(1, var + 1):
+        print("------- [" + str(x) + "단] -------")
+        for y in range(1, var + 1):
+            print(x, "X", y, "=", x * y)
+    print("---------------------")
 
-num = int(input("몇 단까지 출력할까요? "))
+var = int(input("몇 단까지 출력할까요?"))
+print(var, type(var))
 
-if num < 1 or num > 19:
-    print("1부터 19까지의 숫자를 입력하세요.")
-else:
-    print_gugudan_table(num)
+print_gugudan(var)
