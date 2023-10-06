@@ -1,7 +1,7 @@
 def print_gugudan_table(n):
     for i in range(1, n + 1):
         print(f"------[ {i} 단 ] ------")
-        for j in range(1, 10):
+        for j in range(1, 20):
             result = i * j
             print(f"{i} X {j} = {result}")
 
